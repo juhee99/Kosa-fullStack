@@ -62,3 +62,4 @@ git checkout [브랜치 명] -브랜치 변경
     7. git push - 푸쉬<br/>
 
 ### Git Desktop
+<img src="https://user-images.githubusercontent.com/55836020/222890084-8a3465f6-02e8-413a-886a-aa1effc55053.png" width="80%" height="80%">
