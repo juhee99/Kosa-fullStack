@@ -52,13 +52,13 @@ git checkout [브랜치 명] -브랜치 변경
 1. git 설치
 2. github Destop 설치
 3. git repository 생성
-- git 터미널 명령어
-    1. 작업할 파일로 이동
-    2. git init - 해당 디렉토리에 git이 바라보게 설정
-    3. git status - 깃 상태 확인
-    4. git add  .  - 파일 스테이징으로 추가
-    5. git rm –cached 파일 - 스테이징에서 wrokind로 내려 보냄
-    6. git commit -m “메세지” - 커밋
-    7. git push - 푸쉬
+> git 터미널 명령어
+    1. 작업할 파일로 이동<br/>
+    2. git init - 해당 디렉토리에 git이 바라보게 설정<br/>
+    3. git status - 깃 상태 확인<br/>
+    4. git add  .  - 파일 스테이징으로 추가<br/>
+    5. git rm –cached 파일 - 스테이징에서 wrokind로 내려 보냄<br/>
+    6. git commit -m “메세지” - 커밋<br/>
+    7. git push - 푸쉬<br/>
 
 ### Git Desktop
