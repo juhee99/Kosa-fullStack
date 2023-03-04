@@ -45,7 +45,7 @@ git checkout [브랜치 명] -브랜치 변경
 - 분기된 브랜치 병합하기
 1.  git checkout main - 깃 main 브랜치로 변경
 2. git merge 브랜치<br/>
-<span style="color:red"> 병합 충돌 주의!! </span>
+3. 📌병합 충돌 주의 해서 merge 하기!
 
 ### Git 실습
 
