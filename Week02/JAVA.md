@@ -26,7 +26,7 @@
 
 ## 02. ASCII
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dacf89d7-1564-4cdc-a705-5d95c88c95c0/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/55836020/223283690-1b85dcb6-b88d-4bac-a23e-b3dcf70c747f.png)
 
 ## 03.  JAVA 기초
 
