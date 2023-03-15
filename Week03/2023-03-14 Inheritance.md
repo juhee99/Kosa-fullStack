@@ -1,6 +1,6 @@
 <img src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566913897/noticon/xbvewg1m3azbpnrzck1k.png" height="15%" width="15%"> <br/>
 
-# 2023-03-14 Inheritance
+# 2023-03-14 / Inheritance
 
 🗓️ 날짜            2023/03/14 
 
