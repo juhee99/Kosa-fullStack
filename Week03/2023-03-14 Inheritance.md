@@ -172,7 +172,9 @@
 <summary>Exercise01 펼쳐보기</summary>
 <div markdown="1">
 1️⃣ Exercise01
-
+	
+![ex01](https://user-images.githubusercontent.com/55836020/225239225-183e4d31-1f73-4aa9-a33f-27dade63f327.png)
+	
 ```java
 class Person {
 	private String name;
@@ -224,7 +226,9 @@ public class FriendTest {
 </br>
 
 1️⃣ Exercise02
-
+	
+![ex02](https://user-images.githubusercontent.com/55836020/225239256-a976bab7-ab4e-4c3d-b5f4-9bbeb1f0b474.png)
+	
 ```java
 class GuGuDanExpr extends Multiplication {
 	
@@ -278,6 +282,8 @@ public class GuGuDanApp {
 </br>
 
 1️⃣ Exercise03
+
+![ex03](https://user-images.githubusercontent.com/55836020/225239254-7faf3e68-4e44-492f-ad86-2910da596797.png)
 
 ```java
 public class Human {
