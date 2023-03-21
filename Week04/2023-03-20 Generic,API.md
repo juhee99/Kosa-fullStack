@@ -185,9 +185,9 @@ Value3<Date> v4 = new Value3<>();
 
 1️⃣ **실습1 LinkedList**
 
-  day7.FriendTest.java 를 찾아서 day11.LinkedListLab1.java 로 복사한다.</br>
-  Friend 타입의 배열에 Friend 객체를 저장하는 부분을 </br>
-  LinkedList 객체를 생성해서 저장하고 처리하는 소스로 변경하여 구현한다.</br>
+  day7.FriendTest.java 를 찾아서 day11.LinkedListLab1.java 로 복사한다.</br>
+  Friend 타입의 배열에 Friend 객체를 저장하는 부분을 </br>
+  LinkedList 객체를 생성해서 저장하고 처리하는 소스로 변경하여 구현한다.</br>
 
 ```
 class Person {
@@ -237,11 +237,11 @@ public class LinkedListLab1 {
 
 2️⃣ **실습 2 HashSet**
 
-  10 부터 30 까지의 숫자를 10개 추출하여 화면에 다음과 같이 출력하는</br>
-  HashSetLab1 이라는 클래스를 구현한다.</br>
-  중복 숫자는 허용하지 않으며 추출되는 숫자를 HashSet 에 저장하여 처리한다.</br>
+   10 부터 30 까지의 숫자를 10개 추출하여 화면에 다음과 같이 출력하는</br>
+   HashSetLab1 이라는 클래스를 구현한다.</br>
+   중복 숫자는 허용하지 않으며 추출되는 숫자를 HashSet 에 저장하여 처리한다.</br>
 
-오늘의 로또 번호 : 10, 11, 25, 22, 20, 21, 15, 27, 28, 13</br>
+ 오늘의 로또 번호 : 10, 11, 25, 22, 20, 21, 15, 27, 28, 13</br>
 
 ```java
 import java.util.HashSet;
