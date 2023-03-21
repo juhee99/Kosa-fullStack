@@ -172,7 +172,7 @@ Value3<Date> v4 = new Value3<>();
 
 - 순서대로 입력되지 않고, 일정하게 유지되지 않는다.
 - null 도 허용함
-- hashCode()와 equals() 메소드를 재정의 필요!! —> [자세히 보기](https://www.notion.so/f6ca99a9a9254cc8a11ada2bf64a939a)
+- hashCode()와 equals() 메소드를 재정의 필요!! —> [객체와 객체의 equals](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/Week04/2023-03-21%20API.md#04-%EA%B0%9D%EC%B2%B4%EC%99%80-%EA%B0%9D%EC%B2%B4%EC%9D%98-equals)
 - HashSet<Type> set = new HashSet<>();
 
 
