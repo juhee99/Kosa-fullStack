@@ -28,19 +28,20 @@
 
 #  <P style= "font-family:NanumSqyare;"  align= "center"> 🗂 Daily Study </P>
 
-
 <p style= "font-family:NanumSqyare; font-size: 25px;text-align:center;" align= "center" >📅 March </p>
 
 <div align="center" style= "font-family:NanumSqyare; font-size: 25px;">
 
 |SU|MO|TU|WE|TH|FR|SA|
 |-|-|-|-|-|-|-|
-|26|27</br> [![logo](https://img.shields.io/badge/day1-DFA67B?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/71978a9a7d3a339257f17a17bc13747d9cc16b12/Week01/2023-02-27%20Linux.md)|28|01|02|03|04|
-|05|06|07|08|09|10|11|
-|12|13|14|15|16|17|18|
+|26 |27</br> [![logo](https://img.shields.io/badge/day1-FFACAC?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/71978a9a7d3a339257f17a17bc13747d9cc16b12/Week01/2023-02-27%20Linux.md)|28</br> [![logo](https://img.shields.io/badge/day2-FFBFA9?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/Week01/2023-02-28%20Network_Web.md)|01 </br> ![logo](https://img.shields.io/badge/holiday-F9F9F9?style=?style=flat&logoColor=white) |02</br> [![logo](https://img.shields.io/badge/day3-E9EDC9?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/Week01/2023-03-02%20DataBase.md)|03</br> [![logo](https://img.shields.io/badge/day4-9ED2C6?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/Week01/2023-03-03%20Git%20%26%20GitHub.md)|04|
+|05|06</br> [![logo](https://img.shields.io/badge/day5-FFACAC?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/Week02/2023-03-06%20JAVA.md)|07 </br> [![logo](https://img.shields.io/badge/day6-FFBFA9?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/Week02/2023-03-07%20Operator.md)|08 </br> [![logo](https://img.shields.io/badge/day7-FFEBB4?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/Week02/2023-03-08%20loop.md)|09 </br> [![logo](https://img.shields.io/badge/day7-E9EDC9?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/Week02/2023-03-10%20Array.md) |10</br> [![logo](https://img.shields.io/badge/day9-9ED2C6?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/Week02/2023-03-10%20Method.md)|11|
+|12|13</br> [![logo](https://img.shields.io/badge/day10-FFACAC?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/Week03/2023-03-13%20OOP.md)|14</br> [![logo](https://img.shields.io/badge/day11-FFBFA9?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/Week03/2023-03-14%20Inheritance.md)|15</br> [![logo](https://img.shields.io/badge/day12-FFEBB4?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/Week03/2023-03-14%20Inheritance.md)|16</br> [![logo](https://img.shields.io/badge/day13-E9EDC9?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/Week03/2023-03-16%20Interface.md)|17</br> [![logo](https://img.shields.io/badge/day14-9ED2C6?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/Week03/2023-03-16%20Interface.md)|18|
 |19|20|21|22|23|24|25|
 |26|27|28|29|30|31|26|
 |27|28|29|30|31|--|--|
+</div>
+
 
 </div>
 
