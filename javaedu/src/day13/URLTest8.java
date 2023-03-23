@@ -25,9 +25,9 @@ public class URLTest8 {
 					break;
 				bf.append(line);
 			}
-			
+
 			JSONObject obj = null;
-			
+
 			try {
 				obj = new JSONObject(bf.toString());
 			} catch (Exception e) {
@@ -39,10 +39,10 @@ public class URLTest8 {
 			System.out.println(obj.keySet());
 			JSONObject lamp = obj.getJSONObject("LampScpgmtb");
 			JSONArray row = lamp.getJSONArray("row");
-			
-			for(Object e : row) {
-				System.out.println(((JSONObject)e).getString("CLS_NM"));	
-			}	
+
+			for (Object e : row) {
+				System.out.println(((JSONObject) e).getString("CLS_NM"));
+			}
 		} catch (Exception e) {
 			System.out.println("오류 : " + e.getMessage());
 		}

@@ -21,7 +21,7 @@ public class ProductTest2 {
 		Collections.sort(list);
 		Collections.reverse(list);
 		
-		System.out.println("제품 ID\t제품명\t\t가격");
+		System.out.printf("%-10s%-12s%-10s\n","제품 ID","제품명" ,"가격");
 		System.out.println("-------------------------------");
 		for (Product2 p : list) {
 			System.out.println(p);
