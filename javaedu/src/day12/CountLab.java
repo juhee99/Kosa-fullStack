@@ -1,28 +1,25 @@
 package day12;
 
-import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class CountLab {
-
 	public static void main(String[] args) {
 		String readFilenm = "c:/iotest/yesterday.txt";
-		int cnt =0;
-		
-		try (FileReader reader = new FileReader(readFilenm);
-				BufferedReader br = new BufferedReader(reader)) {
-			
+		int cnt = 0;
+		File f = new File(readFilenm);
+
+		try (Scanner scan = new Scanner(f)) {
 			String data;
-			while (true) {
-				data = br.readLine();
-				if (data == null)
-					break;
-				if(data.contains("yesterday")) cnt++;
+			while (scan.hasNext()) {
+				data = scan.next();
+				if (data.contains("yesterday"))
+					cnt++;
 			}
-			
-			System.out.printf("yesterday 라는 단어는 %d개 있습니다.",cnt);
+
+			System.out.printf("yesterday 라는 단어는 %d개 있습니다.", cnt);
 
 		} catch (FileNotFoundException fe) {
 			System.out.println("yesterday 파일을 찾을 수 없습니다.");

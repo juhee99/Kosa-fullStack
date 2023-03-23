@@ -34,8 +34,11 @@ public class Product2 implements Comparable<Product2> {
 	
 	@Override
 	public String toString() {
-		return productID +"\t"+ productName+
-				(productName.length() < 6 ?  "\t\t" : "\t" ) +String.format("%,d원", Integer.parseInt(productPrice));	
+		return String.format("%-10s%-12s%,10d원", productID,productName,Integer.parseInt(productPrice));
+		/*
+		 * return productID +"\t"+ productName+ (productName.length() < 6 ? "\t\t" :
+		 * "\t" ) +String.format("%,d원", Integer.parseInt(productPrice));
+		 */
 	}
 
 	@Override

@@ -1,6 +1,6 @@
 package day6;
 
-class Student {
+ class Student {
 	//멤버 변수
 	String name; 
 	int age ;
