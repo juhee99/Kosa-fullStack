@@ -28,9 +28,7 @@
 
 #  <P style= "font-family:NanumSqyare;"  align= "center"> 🗂 Daily Study </P>
 
-<details>
-<summary style= "font-family:NanumSqyare; font-size: 25px; text-align:center;" align= "center"> 📅 March </summary>
-<div markdown="1">
+### <P align= "center"  markdown="1" >  📅 *March*  </P> 
 
 <div align="center" style= "font-family:NanumSqyare; font-size: 25px;">
 
@@ -44,8 +42,6 @@
 |27|28|29|30|31|--|--|
 </div>
 
-</div>
-</details>
 
 
 
