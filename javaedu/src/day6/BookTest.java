@@ -1,25 +1,6 @@
 package day6;
-class Book{
-	String title;
-	String author;
-	int price;
-	
-	Book(){
-		this("이것이 자바다","신용권,임경균",36000);
-	}
-	
-	Book(String title, String author, int price){
-		this.title = title;
-		this.author = author;
-		this.price = price;
-	}
-	
-	String getBookInfo() {
-		return "제목 : " + title + "\t 저자 : " + author+"\t 가격 : " + price; 
-	}
-}
-public class BookTest {
 
+public class BookTest {
 	public static void main(String[] args) {
 		Book [] books = new Book[5];
 		

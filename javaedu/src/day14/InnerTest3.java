@@ -15,7 +15,7 @@ public class InnerTest3 {
 
 	public static void main(String args[]) {
 		System.out.println("Main start !!");
-		InnerTest3 n = new InnerTest3();
+		InnerTest3 n = new InnerTest3();  // outer class도 같이 생성
 		n.pr(new Test() {   //anonymous class 생성(Test의 자손 class)
 			int su = 100;
 
