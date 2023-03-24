@@ -1,7 +1,7 @@
 package day14;
 
 interface Testable {
-	final static String fs = "Interface Test";
+	final static String FS = "Interface Test";
 
 	abstract void output(String s);
 }
@@ -9,7 +9,7 @@ interface Testable {
 public class InnerTest4 {
 	void pr(Testable o) {
 		o.output("Test");
-		System.out.println(Testable.fs);
+		System.out.println(Testable.FS);
 		// System.out.println(o.su); // 자손에서 추가된 멤버는 접근할 수 없다.
 	}
 
