@@ -7,7 +7,6 @@ import java.sql.Statement;
 
 
 public class CreateBookLab {
-
 	public static void main(String[] args) {
 		String url = "jdbc:mysql://localhost:3306/edudb?characterEncoding=UTF-8&serverTimezone=UTC";
 		String user = "jdbctest";
@@ -20,8 +19,8 @@ public class CreateBookLab {
 				System.out.println("book 테이블 생성 완료!");
 		}catch(SQLException e ) {
 			System.out.println("오류발생 : "+e.getMessage());
+			e.printStackTrace();
 		}
 
 	}
-
 }
