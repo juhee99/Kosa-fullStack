@@ -6,10 +6,10 @@
 # <p style= "font-family:NanumSqyare;"> 👀 Curriculum </p>
 <div align="left" >
 
-  - [ ] 프로그래밍 기초
-  - [ ] JAVA
-  - [ ] DB 와 SQL
-  - [ ] JDBC
+  - [x] 프로그래밍 기초
+  - [x] JAVA
+  - [x] DB 와 SQL
+  - [x] JDBC
   - [ ] Web Client - HTML5,CSS3, javaScript(ES6)
   - [ ] MVC 기반의 Servelet&JSP 
   - [ ] **게시판 구현 학습** Spring FW(DI, MVC, Restful API, JdbcTemplate)
