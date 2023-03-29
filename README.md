@@ -1,10 +1,11 @@
 ![slice](https://capsule-render.vercel.app/api?type=slice&color=F9E000&height=200&text=DKteckin&fontAlign=70&rotate=13&fontAlignY=25&desc=MSA Full Stack Education&descAlign=70.&descAlignY=44)
 
+# <p style= "font-family:NanumSqyare;" align= "center"> 👀 Curriculum </p>
 
-<div align= "center" > 
+<details>
+<summary style= "font-family:NanumSqyare; font-size: 25px;text-align:center;" align= "center"> Click❗ </summary>
 
-# <p style= "font-family:NanumSqyare;"> 👀 Curriculum </p>
-<div align="left" >
+<div>
 
   - [x] 프로그래밍 기초
   - [x] JAVA
@@ -20,11 +21,11 @@
   - [ ] 📍2차 미니 프로젝트 (5.17 ~ 5.25)
   - [ ] Docker를 활용한 컨테이너 기반 웹 어플리케이션 구현
   - [ ] Cloude 기반 운영 환경 - 쿠버네이트
-  - [ ] 📍최종 프로젝트 (6.19 ~ 7.26) 
+  - [ ] 📍최종 프로젝트 (6.19 ~ 7.26)
+  
 </div>
-</div>
+</details>
 
-</br></br>
 </br></br>
 
 # <p align="center" style= "font-family:NanumSqyare;"> 📚 SKILL SET </p>
