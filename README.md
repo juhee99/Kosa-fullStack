@@ -28,7 +28,7 @@
 
 </br></br>
 
-# <p align="center" style= "font-family:NanumSqyare;"> 📚 SKILL SET </p>
+# <p align="center" style= "font-family:NanumSqyare;"> 📚 Skill Set </p>
 <div align= "center"> 
 <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=OpenJDK&logoColor=white"/> 
 <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=white">
