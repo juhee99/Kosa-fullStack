@@ -1,6 +1,32 @@
 ![slice](https://capsule-render.vercel.app/api?type=slice&color=F9E000&height=200&text=DKteckin&fontAlign=70&rotate=13&fontAlignY=25&desc=MSA Full Stack Education&descAlign=70.&descAlignY=44)
 
 
+<div align= "center" > 
+
+# <p style= "font-family:NanumSqyare;"> 👀 Curriculum </p>
+<div align="left" >
+
+  - [ ] 프로그래밍 기초
+  - [ ] JAVA
+  - [ ] DB 와 SQL
+  - [ ] JDBC
+  - [ ] Web Client - HTML5,CSS3, javaScript(ES6)
+  - [ ] MVC 기반의 Servelet&JSP 
+  - [ ] **게시판 구현 학습** Spring FW(DI, MVC, Restful API, JdbcTemplate)
+  - [ ] 📍1차 미니 프로젝트 (4.26 ~ 5.2)  
+  - [ ] JPA
+  - [ ] Spring Boot
+  - [ ] Vue.js & Node.js
+  - [ ] 📍2차 미니 프로젝트 (5.17 ~ 5.25)
+  - [ ] Docker를 활용한 컨테이너 기반 웹 어플리케이션 구현
+  - [ ] Cloude 기반 운영 환경 - 쿠버네이트
+  - [ ] 📍최종 프로젝트 (6.19 ~ 7.26) 
+</div>
+</div>
+
+</br></br>
+</br></br>
+
 # <p align="center" style= "font-family:NanumSqyare;"> 📚 SKILL SET </p>
 <div align= "center"> 
 <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=OpenJDK&logoColor=white"/> 
