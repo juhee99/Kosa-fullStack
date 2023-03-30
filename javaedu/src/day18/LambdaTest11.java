@@ -1,4 +1,4 @@
-package day17;
+package day18;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -7,12 +7,12 @@ import java.util.List;
 
 public class LambdaTest11 {
 	public static void main(String[] args) {
-		List<String> list = Arrays.asList("abc", "aaa", "bbb", "ccc"); // List로 리턴해줘
+		List<String> list = Arrays.asList("abc", "aaa", "bbb", "ccc");
 		System.out.println("오리지널 리스트 : " + list);
 		Collections.sort(list);
 		System.out.println("기본은 오름차순 : " + list);
 
-		Collections.sort(list, new Comparator<String>() {   // anonymous inner class
+		Collections.sort(list, new Comparator<String>() {
 			public int compare(String s1, String s2) {
 				return s2.compareTo(s1);
 			}
