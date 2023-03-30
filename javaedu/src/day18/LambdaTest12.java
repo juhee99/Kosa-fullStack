@@ -1,46 +1,41 @@
-package day17;
+package day18;
 
 interface ActionExpression {
 	void exec(Object... param);
 }
 
-interface FuncExpression<T> { // interface가 generic 타입
+interface FuncExpression<T> {
 	T exec(Object... param);
 }
 
 public class LambdaTest12 {
-	public static void test1(ActionExpression action) {
+	public static void Test1(ActionExpression action) {
 		action.exec("hello world");
 	}
 
-	public static void test2(FuncExpression<String> func) {
+	public static void Test2(FuncExpression<String> func) {
 		String ret = func.exec("hello world");
 		System.out.println(ret);
 	}
 
 	public static void main(String[] args) throws Exception {
-		test1(new ActionExpression() {                            //anonymous inn
+		Test1(new ActionExpression() {
 			public void exec(Object... data) {
 				System.out.println("Test1 - " + data[0]);
 			}
 		});
-		test2(new FuncExpression<String>() {
+		Test2(new FuncExpression<String>() {
 			public String exec(Object... data) {
 				System.out.println(data[0]);
 				return "OK1";
 			}
 		});
 
-		test1((Object... data) -> System.out.println("test2 - " + data[0]));
+		Test1((Object... data) -> System.out.println("Test2 - " + data[0]));
 
-		test2((Object... data) -> {
+		Test2((Object... data) -> {
 			System.out.println(data[0]);
 			return "OK2";
-		});
-		
-		test2( data -> {
-			System.out.println(data[0]);
-			return "OK3";
 		});
 	}
 }
