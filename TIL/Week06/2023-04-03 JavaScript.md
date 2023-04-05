@@ -114,10 +114,6 @@
 - Math.random() —> 0 < ran <1   —→ Math.floor(Math.random())
 
 
-## 📎 오늘의 느낌 점
-- eclips로 js를 구현 하다보니 VScode가 제공하는 tool의 이점을 느끼게 되었다.
-- 등가연산 == 와 ===(타입까지 ) 의 차이점을 알게 되었다.
-
 
 ## Exercise01 / CSS
 <details>
@@ -386,3 +382,9 @@ for(let i=1 ; i<10 ; i++){
 
 </div>
 </details>
+
+
+## 👩 today’s feeling
+- eclips로 js를 구현 하다보니 VScode가 제공하는 tool의 이점을 느끼게 되었다.
+- 등가연산 == 와 ===(타입까지 ) 의 차이점을 알게 되었다.
+- 변수 선언 할때 주의 하기 + var는 구문법으로 사용 
