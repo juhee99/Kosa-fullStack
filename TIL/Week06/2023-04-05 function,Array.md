@@ -516,3 +516,9 @@ printH4(content) : content에 전달된 내용을 <h4> 태그와 함께 도큐�
 
 </div>
 </details>
+
+## 👩 today’s feeling	
+- Array 는 java 보다 훨씬 유연하고 내장 함수가 많아서 편리한 점이 많다.
+- JS Array 는 가변적인 점이 편리하다.
+- JS의 함수의 리턴값이 없으면 undefined 라는 것을 유념하자!
+- 계속 let을 int라 적는다.. js 변수는 let, const ,var
