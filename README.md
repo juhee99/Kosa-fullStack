@@ -75,12 +75,12 @@
 <div align="center" style= "font-family:NanumSqyare; font-size: 25px;">
 
 |SU|MO|TU|WE|TH|FR|SA|
-|-|-|-|-|-|-|-|
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |--|--|--|--|--|--|01|
-|02|03</br> [![logo](https://img.shields.io/badge/day25-FFACAC?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/TIL/Week06/2023-04-03%20JavaScript.md)|04</br> [![logo](https://img.shields.io/badge/day26-FFBFA9?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/TIL/Week06/2023-04-04%20function%2CArray.md)|05</br> [![logo](https://img.shields.io/badge/day27-FFEBB4?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/TIL/Week06/2023-04-05%20Object.md)|06|07|08|
+|02|03</br> [![logo](https://img.shields.io/badge/day25-FFACAC?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/TIL/Week06/2023-04-03%20JavaScript.md)|04</br> [![logo](https://img.shields.io/badge/day26-FFBFA9?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/TIL/Week06/2023-04-04%20function%2CArray.md)|05</br> [![logo](https://img.shields.io/badge/day27-FFEBB4?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/TIL/Week06/2023-04-05%20Object.md)|06</br> [![logo](https://img.shields.io/badge/day28-E9EDC9?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/TIL/Week06/2023-04-06%20EventModel.md)|07</br> [![logo](https://img.shields.io/badge/day29-9ED2C6?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/TIL/Week06/2023-04-07%20JS%20API.md)|08|
 |09|10|11|12|13|14|15|
 |16|17|18|19|20|21|22|
 |23|24|25|26|27|28|29|
 |30|--|--|--|--|--|--|
 
-</div
+</div>
