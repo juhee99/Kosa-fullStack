@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script src="util.js"></script>
+<script>
+function calc(...p){
+	var sum = 0;
+	if (p.length == 0)
+		return 0;
+	for (let data in p){
+		if(isNaN(p[data]))
+			return '숫자만 전달하세요';
+		else 
+			sum += Number(p[data]);		
+	}
+	return sum;
+	
+}
+
+write(calc(),"h3");
+write(calc(10,20,'30'),"h3");
+write(calc(10,'가나다',20),"h3");
+write(calc(1,2,3,4,5),"h3");
+
+</script>
+</body>
+</html>

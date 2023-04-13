@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script src="util.js"></script>
+	<script>
+		writeColor("자바스크립트 실습(4)", "h1", "CornflowerBlue")
+		var sum = function(num) {
+			var result = 0;
+			if (num == undefined || num == "")
+				return;
+			else {
+				for (let i = 1; i <= num; i++)
+					result += i;
+				return result;
+			}
+		}
+		for (let i = 0; i < 5; i++) {
+			var rand = Math.floor(Math.random() * 6);
+			if (rand == 0)
+				rand == "";
+			if (sum(rand) == null)
+				write("결과값이 없습니다 :(", "h3");
+			else
+				write("호출 결과값 : " + sum(rand), "h2");
+		}
+	</script>
+
+</body>
+</html>

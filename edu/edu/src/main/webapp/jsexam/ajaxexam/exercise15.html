@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'GowunBatang-Regular';
+    text-align: center;
+}
+img{
+	transition: all ease 2s;
+}
+img:hover {
+	transform: rotate( 360deg );
+}
+
+</style>
+</head>
+<body>
+<div id="output"></div>
+<script>
+window.onload = function getWeather() {
+	const xhr = new XMLHttpRequest();
+	xhr.onload = function(e) {
+		if (xhr.status == 200) {
+			const str = xhr.responseText;
+			const data = JSON.parse(str);
+			
+			const target = document.getElementById('output');
+			
+			const wimg = document.createElement('img');
+			wimg.src = "../../"+data.img;
+			wimg.width=100;
+    		wimg.height=100;
+			
+			target.innerHTML += "<h1>오늘의 날씨 정보 - "+data.wtext+"</h1>";
+			target.innerHTML += "<hr>";
+			target.innerHTML += "발표 일시 : "+ data.time+"</br>";
+			target.innerHTML += "온도 : "+data.temp+"도</br>";
+			document.body.appendChild(wimg); 
+		}
+	};
+    xhr.open('GET', 'content/weather.jsp', true);
+    xhr.send();                
+};
+
+</script>
+</body>
+</html>

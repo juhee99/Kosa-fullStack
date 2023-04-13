@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body{
+text-align: center;
+}
+h1 {
+	text-shadow: 2px 2px 20px DarkCyan;
+	color: white;
+}
+button {
+	height: 30px;
+	width: 80px;
+	margin: 10px 10px;
+	padding: 10px auto;
+	border: 2px solid  DarkCyan;
+	background-color:  DarkCyan;
+	color: white
+}
+
+</style>
+</head>
+<body>
+
+<h1>이벤트 처리 실습</h1>
+<hr>
+<div>
+	<div id="select-weather">
+	<button class="btn" value="sun">맑음</button>
+	<button class="btn" value="cloud">흐림</button>
+	<button class="btn" value="rain">비</button>
+	<hr>
+	</div>
+	<div id="show-weather"></div>
+</div>
+
+<script>
+const weatherList = {
+		맑음 : "sun",
+		흐림 : "cloud",
+		비 : "rain",
+};
+
+function showImage(e){
+	console.log(e.target);	
+	if(e.target.tagName!=="BUTTON"){
+		return;
+	}
+	wdom.innerHTML = `<img src="../../images/${weatherList[e.target.textContent]}.png" width=200px;>`;
+	
+}
+
+const wdom = document.getElementById("show-weather");
+const dom = document.querySelector("div");
+dom.addEventListener("click", showImage, true);
+
+</script>
+</body>
+</html>

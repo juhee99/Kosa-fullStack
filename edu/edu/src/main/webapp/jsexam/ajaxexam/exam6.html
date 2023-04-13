@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ajax테스트</title>
+</head>
+<body>
+<h2 onclick="getImage();">이 행을 클릭해요. Ajax로 이미지를 요청하고 출력해요....</h2>
+<script>
+let imgname = 1;
+function getImage() {
+	imgname = imgname == 10 ? 1 : imgname+1; 
+	const xhr = new XMLHttpRequest();	
+	xhr.responseType = 'blob';
+	xhr.onload = function(e) {
+  		if (this.status == 200) {
+    		const blob = e.target.response // 서버로부터 받아온 
+    		const img = document.createElement('img'); // 없던 이미지 갖다 붙이기->img tag에 따른 DOM 객체
+    		img.width=100;
+    		img.height=100;
+    		img.src = URL.createObjectURL(blob); // 응답된 컨텐츠를 갖고 가상 url 만들기
+    		document.body.appendChild(img);   // body 태그에 append child
+  		}
+	};
+	// 실제 서버에게 요청/전달
+	xhr.open('GET', `/edu/images/${imgname}.jpg`, true);
+	xhr.send();
+}
+</script>
+</body>
+</html>

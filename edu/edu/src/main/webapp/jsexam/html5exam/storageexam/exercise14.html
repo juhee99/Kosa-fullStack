@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body onload="canvas_m()">
+	<h1>김예원의 HTML API 실습</h1>
+	<button onclick="save();">저장하기</button>
+	<button onclick="restore();">읽어오기</button>
+	<button onclick="initialize();">삭제하기</button>
+	<section>
+		<canvas id="myCanvas" width="800" height="800"></canvas>
+	</section>
+	<script>
+
+	var m_canvas = document.getElementById('myCanvas');
+	function canvas_m() {
+		canvas = m_canvas.getContext('2d');
+		
+		canvas.beginPath();
+		canvas.fillStyle = 'Peru';
+		canvas.arc(200,200,100,(Math.PI/180)*(-135),(Math.PI/180)*(-45),false);
+		canvas.stroke();
+		canvas.fill();
+		
+		canvas.beginPath();
+		canvas.fillStyle = 'Peru';
+		canvas.moveTo(200-50*Math.sqrt(2),200-50*Math.sqrt(2));
+		canvas.lineTo(200,200);
+		canvas.lineTo(200+50*Math.sqrt(2),200-50*Math.sqrt(2));
+		canvas.stroke();
+		canvas.fill();
+	
+		canvas.beginPath();
+		canvas.fillStyle = 'SaddleBrown';
+		canvas.arc(200,200,80,(Math.PI/180)*(-135),(Math.PI/180)*(-45),false);
+		canvas.stroke();
+		canvas.fill();
+		
+		canvas.beginPath();
+		canvas.fillStyle = 'SaddleBrown';
+		canvas.moveTo(200-40*Math.sqrt(2),200-40*Math.sqrt(2));
+		canvas.lineTo(200,200);
+		canvas.lineTo(200+40*Math.sqrt(2),200-40*Math.sqrt(2));
+		canvas.stroke();
+		canvas.fill();
+		
+		canvas.beginPath();
+		canvas.fillStyle = 'black';
+		canvas.ellipse(180, 145, 8, 15, Math.PI*1.6, 0, 2 * Math.PI);
+		canvas.ellipse(220, 145, 8, 15, Math.PI*1.4, 0, 2 * Math.PI);
+		canvas.fill();
+		
+		canvas.beginPath();
+		canvas.fillStyle = 'black';
+		canvas.moveTo(173, 143);
+		canvas.lineTo(173, 147);
+		canvas.lineTo(225, 147);
+		canvas.lineTo(225, 143);
+		canvas.stroke();
+		canvas.fill();
+		
+		canvas.beginPath();
+		canvas.arc(197, 115, 50, (Math.PI/180)*95 ,(Math.PI/180)*75,true);
+        canvas.stroke()
+	}
+	
+	function save(){
+	   	alert(m_canvas.toDataURL());
+	   	window.localStorage.setItem("canvasImg", m_canvas.toDataURL());
+	}
+	function restore(){
+		var img = new Image();
+		img.src = window.localStorage.canvasImg;
+		img.onload = function() {
+			canvas.drawImage(img, 0, 0);
+		} 	
+	}
+	function initialize(){
+		canvas.clearRect(0,0,800,800);
+		canvas.beginPath();
+		canvas.rect(0,0,800,800);
+		canvas.fillStyle = "white";
+		canvas.fill();
+	}
+	
+	
+	</script>
+</body>
+</html>

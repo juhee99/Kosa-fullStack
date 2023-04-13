@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script src="util.js"></script>
+<script>
+
+function DayInfo(name, year, month, date){
+	this.name = name;
+	this.year = year;
+	this.month = month;
+	this.date = date;
+	
+	DayInfo.prototype.getTotalDates = function() {
+		var count = parseInt((new Date(2023,04,05) - new Date(this.year,this.month,this.date))/(1000*60*60*24)+1);
+		return this.name+"님은 태어난지 "+count+"일 되었어요.";
+	}
+	
+	DayInfo.prototype.getKorDay = function() {
+		const list = ["일", "월", "화", "수", "목", "금", "토"];
+		var uDate = new Date(this.year, this.month-1, this.date);
+
+		return this.name+"님은 "+list[uDate.getDay()]+"요일에 태어났어요.";
+		
+	}
+}
+	writeColor(new DayInfo("예원", 1997, 12, 02).getTotalDates(),"h3","SteelBlue")
+	writeColor(new DayInfo("예원", 1997, 12, 02).getKorDay(),"h3","PaleVioletRed");
+
+
+</script>
+
+</body>
+</html>

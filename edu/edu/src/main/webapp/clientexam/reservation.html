@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Reservation System</title>
+<style>
+
+@font-face {
+     font-family: 'S-CoreDream-3Light';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+
+body {
+	margin: 0 auto;
+	text-align:center;
+	height : 100vh;
+	background: url('https://cdn.bhdw.net/im/red-flowers-and-a-rainbow-appearing-in-a-cloudy-sky-wallpaper-97199_w635.webp') no-repeat center;
+	background-size : cover; 
+}
+
+h1 {
+	font-family: 'S-CoreDream-3Light';
+	font-weight:bolder;
+	padding : 10px;
+	
+}
+
+.formContainer {
+	display: flex;
+	padding : 10px;
+	font-family: 'S-CoreDream-3Light';
+	border-radius : 30px;
+	flex-direction: column;
+	margin : 0 20% 0 20%;
+}
+
+.inputContainer{
+	padding : 10px;
+}
+
+</style>
+</head>
+<body>
+	<h1>펜션 예약 서비스</h1>
+	<hr>
+	<div class="formContainer">
+		<form action="/edu1/reservation" method="post" >
+			<div class="inputContainer">
+			<label for="client">예약자명 : </label>
+			<input type="text" id="client"name="client" /> 
+			</div>
+			
+			<div class="inputContainer">
+			<label for="pwd">예약암호 : </label>
+			<input type="password" id="pwd" name="pwd" />
+			</div>
+			
+			<div class="inputContainer">
+			<label>룸 선택 : </label>
+			<input type="radio" id="dooly" name="room" value="둘리" /> 
+			<label for="dooly">둘리</label>
+			<input type="radio" id="heedong" name="room" value="희동" />
+			<label for="heedong">희동</label>
+			<input type="radio" id="donner" name="room" value="도우너" />
+			<label for="donner">도우너</label>
+			<input type="radio" id="ddochi" name="room" value="또치" />
+			<label for="ddochi">또치</label>
+			</div>
+			
+			<div class="inputContainer">
+			<label>추가요청사항 : </label>
+			<input type="checkbox" id="barbeque" name="option" value="바베큐"/>
+			<label id="barbeque">바베큐</label>
+			<input type="checkbox" id="swiming" name="option" value="수영장"/>
+			<label id="barbeque">수영장</label>
+			<input type="checkbox" id="fishing" name="option" value="낚시"/>
+			<label id="fishing">낚시</label>
+			<input type="checkbox" id="branch" name="option" value="조식"/>
+			<label id="branch">조식</label>
+			</div>
+			
+			<div class="inputContainer">
+			<label id="date">예약 날짜 :</label>
+			<input type="date" id="date" name="date"/>
+			</div>
+			
+			<div class="inputContainer">
+			<button type="submit">보내기</button>
+			<button type="reset">다시 작성하기</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

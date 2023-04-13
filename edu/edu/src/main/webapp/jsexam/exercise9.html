@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script src="util.js"></script>
+	<script>
+		var printObject = function(p) {
+			if (typeof p != "object" || Array.isArray(p)) return;
+			writeColor(p['msg'],p['tag'],p['color']);
+		}
+		for (let i = 0; i < 5; i++) {
+			printObject({
+				tag : 'h1',
+				color : '#1E90FF',
+				msg : '폰트 색상은 DodgerBlue 입니다!',
+			});
+		}
+	</script>
+
+
+</body>
+</html>

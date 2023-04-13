@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>	
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+h2 {
+	font-family:'GowunBatang-Regular';
+	text-decoration: none;
+	color: mediumseagreen;
+}
+
+button {
+	height: 30px;
+	width: 80px;
+	margin: 20px 10px;
+	padding: 20px auto;
+	border: 2px solid lightgreen;
+	background-color: lightgreen;
+	font-family: 'GowunBatang-Regular';
+	font-weight: bolder;
+}
+
+p,div {
+	text-align: center;
+	
+}
+div{
+	color: mediumseagreen;
+	font-family: 'GowunBatang-Regular';
+	font-weight: Medium;
+	font-size: 1.2em;
+}
+</style>
+</head>
+<body>
+<h2 style="text-align: center;" onclick="go();">🍀구구단🍀</h2>
+<p></p>
+<div></div>
+	
+	<script>
+	const dom = document.getElementsByTagName("p")[0];
+	for(let i = 1; i<10; i++)
+		dom.innerHTML += "<button>"+i+"단</button>";
+		
+	function go(){
+		location.href = "https://ko.wikipedia.org/wiki/구구단/";
+	}	
+	const gugu = document.getElementsByTagName("div")[0];
+	function printGugu(e) {
+		var num = parseInt(this.textContent[0]);
+		var gugudan="";
+		for(let i=1; i<10; i++){
+			gugudan += num+"×"+i+"＝"+(num*i)+"</br>";
+		}
+		gugu.innerHTML = gugudan;		
+	}
+	
+	const doms = document.getElementsByTagName("button");
+	for(let i = 0; i<9; i++)
+		doms[i].addEventListener("click", printGugu);
+
+	</script>
+
+</body>
+</html>

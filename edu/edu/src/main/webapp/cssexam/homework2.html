@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	@font-face {
+	    font-family: 'GmarketSansMedium';
+	    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	body {
+		font-family: 'GmarketSansMedium';
+	}
+	header {
+		background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		text-align: center;
+		padding: 1em;
+	}
+	header h1 {
+		color: white;
+		text-shadow: 2px 2px 2px gray;
+	}
+	header a{
+		padding: 4em;
+		color: steelblue;
+	}
+	header a:hover {
+		font-weight: bold;
+	}	
+	section article {
+		border: 1px dashed darkturquoise; 
+		border-radius : 30px;
+		margin: 2em auto;
+		width: 700px;
+		padding: 0.5em 1.5em;
+	}
+	section article:nth-of-type(1) h2{
+		color: mediumpurple;
+	} 
+	section article:nth-of-type(2) h2{
+		color: hotpink;
+	} 
+	section article:nth-of-type(3) h2{
+		color: mediumseagreen;
+	} 	
+	section article:nth-of-type(3) h2 span{
+		background-color: mediumseagreen;
+		color:white;
+		padding: 3px 3px 1px 3px;
+	} 
+	article th {
+    	background-color : pink;
+	}
+	article figure{
+		text-align: center;
+	}
+	article img:hover{
+		opacity: 0.5;
+	}
+	aside, footer{
+		text-align:center;
+	}
+	footer {
+		background-color: whitesmoke;
+		padding: 1em;
+	}
+	
+
+</style>
+
+</head>
+<body>
+	<header>
+		<h1>김예원의 HTML5 학습</h1>
+		<nav>
+			<a href="https://www.naver.com">NAVER</a> 
+			<a href="https://www.google.com">GOOGLE</a> 
+			<a href="https://www.daum.net">DAUM</a>
+		</nav>
+	</header>
+	
+	<section>
+		<article>
+			<h2>💜나의 소개💜</h2>
+			<ul>
+				<li>이름 : 김예원😉</li>
+				<li>별명 : 애옹😻</li>
+				<li>관심기술 : Java✨</li>
+				<li>취미 : 풋살⚽</li>
+			</ul>
+		</article>
+		
+		<article>
+			<h2>📚올해 재미있게 읽은 책📚</h2>
+			<table border=1>
+				<tr>
+					<th>제목</th>
+					<th>장르</th>
+				</tr>
+				<tr>
+					<td>친절한 이방인</td>
+					<td>미스터리</td>
+				</tr>
+				<tr>
+					<td>이것이 자바다</td>
+					<td>스릴러</td>
+				</tr>
+				<tr>
+					<td>자바 웹 개발 워크북</td>
+					<td>로맨스</td>
+				</tr>
+			</table>
+			<br>
+		</article>
+		
+		<article>
+			<h2>📍자랑하고 싶은 <span>우리 동네</span>의 아름다운 곳📍</h2>
+			안양천 벚꽃길🌸 여의도 다 필요없다~! 안양천 벚꽃길이면 올해 벚꽃 구경 끝~!~!
+			<figure>
+				<img
+					src="http://2.bp.blogspot.com/-4mACfGzo5Ko/VQZejhMaICI/AAAAAAAAGRE/63-OnYXZ_SA/s1600/%EC%95%88%EC%96%91%EC%B2%9C%2B%EB%B2%9A%EA%BD%83%EA%B8%B8%2B86.JPG"
+					width=600>
+				<figcaption>안양천 벚꽃길</figcaption>
+			</figure>
+		</article>
+	</section>
+	
+	<aside>
+		<iframe width="560" height="315"
+			src="https://www.youtube.com/embed/3Xu4vU5BOFc"
+			title="YouTube video player" frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			allowfullscreen></iframe>
+	</aside>
+	
+	<footer>
+		<em>이 문서는 김예원에 의해 HTML5와 CSS 기술을 사용하여 2023년 3월 30일에 작성하였습니다. (ver
+			1.0)</em>
+	</footer>
+</body>
+</html>

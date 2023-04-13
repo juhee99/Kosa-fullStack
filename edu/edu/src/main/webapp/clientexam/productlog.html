@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body {
+	margin: 0 auto;
+	text-align: center;
+}
+
+img {
+	width: 15%;
+	height: 15%;
+	margin: 2%;
+	border: 1px solid;
+}
+
+#selectedPrd {
+	border: 1px solid black;
+	border-radius: 30px;
+	background-color: #B9EDDD;
+	width: 70%;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#selectedPrd hr {
+	border: 1px dashed #577D86;
+	text-align: "center";
+	width: 80%
+}
+</style>
+</head>
+<body>
+	<h2>원하는 상품을 클릭해 주세요.</h2>
+	<hr>
+	<div id="prdContainer"></div>
+	<div id="selectedPrd">
+		<h4>선택한 상품 리스트</h4>
+		<hr>
+		<div id="List">
+		</div>
+		<button type="button">상품 비우기</button>
+	</div>
+	<script>
+		// 이미지 문서에 나타내는 메서드
+		function showImg() {
+			const prdContainer = document.getElementById("prdContainer");
+			for (let i = 1; i < 10; i++) {
+				prdContainer.innerHTML += `<img src='../images/${i}.jpg' name='p00${i}' id='${i}' />`;
+			}
+			prdContainer.innerHTML += `<img src='../images/10.jpg' name='p010' id='10' />`
+		}
+		
+		const ListContainer = document.getElementById("List");
+		
+		function prdClickHandler(e) {
+			const xhr = new XMLHttpRequest();
+			xhr.onload = function() {
+				if (xhr.status == 200) {
+					const jsonObj = JSON.parse(xhr.responseText);
+					const prdList = Object.keys(jsonObj);
+			
+					ListContainer.innerHTML = "<ul>"
+					for (i in prdList) {
+						ListContainer.innerHTML += `<li>${prdList[i]} 상품 ${jsonObj[prdList[i]]}개 </li>`;
+					}
+					ListContainer.innerHTML += "</ul>"
+				}
+			}
+
+			xhr.open('GET', `/edu/basket?id=${e.target.name}`, true);
+			xhr.send();
+		}
+
+		function clearProduct() {
+			const xhr = new XMLHttpRequest();
+			xhr.onload = function() {
+				if (xhr.status == 200) {
+					const clearMsg = JSON.parse(xhr.responseText);
+					ListContainer.innerHTML = "<p>"+clearMsg["msg"]+"</p>"; 
+				}
+			}
+			xhr.open('GET', `/edu/basket`, true);
+			xhr.send();
+		}
+
+		window.addEventListener("load", showImg);
+		const prdContainer = document.getElementById("prdContainer");
+		prdContainer.addEventListener("click", prdClickHandler);
+		
+		
+		let btn = document.getElementsByTagName("button")[0];
+		btn.addEventListener("click",clearProduct);
+		
+	</script>
+</body>
+</html>
