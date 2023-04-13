@@ -1,0 +1,364 @@
+<img src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1659254245/noticon/rj5wzu8zlbf1ddo2u8hq.png" height="15%" width="15%"> <br/>
+
+# 2023-04-11 / Servlet
+
+🗓️ 날짜           2023/04/11
+
+☁️ 날씨           🌥️ 대체로 흐림 (17°C)
+
+
+## 1. ES6에서 추가된 구문
+
+- **Array and object destructing**
+    - 이름으로 값을 가져온다. → 순서가 바뀌어도 찾아 올 수 있다.
+    - 성 이름과 동일하지 않은 변수를 할당하면 undefined가 반환된다.
+    - 변수의 이름을 바꾸려면 콜론(:)을 대신 사용하여 변경 가능
+
+```jsx
+//Object destructing
+const introduce = { name: 'unico', age: 23 };
+const { name, age } = introduce;
+let { name : userName , age } = introduce; // name변경
+
+// Array destructing
+const [v1, v2, ...rest] = [10, 20, 30, 40, 50];
+let foo = ["one", "two", "three"];
+let [red, yellow, green] = foo;
+
+```
+
+- 가변 아규먼트
+    - 함수(…args) {  }
+- 기본값 아규먼트
+    - 함수(a=10,b=20,c=20) { }
+    - 호출 시 argument의 값을 안주면 기본값으로 적용된다.
+    
+    ```jsx
+    function func3(a, b = 20, c = 30) {
+        	console.log(`${a}:${b}:${c}`)
+            return a + b + c;
+        }
+    console.log(`${func3(a=100)}`); // 150
+    console.log(`${func3(b=1)}`) ; 
+    // a 한테 들어간다. -->position으로 들어가기 때문에 
+    ```
+    
+- Arrow function
+    - java의 람다식과 비슷하다.
+    - const 함수명 = (arguement..) ⇒ { 수행 코드 };
+- rest Element
+    - …은 꼭 마지막에 와야한다.
+    - 마지막 매개변수만
+    
+    ```jsx
+    function f2() {
+        		  return [1, 2, 3, 4, 5, 6];
+     }
+    
+    let z;
+    [x, y, ...z] = f2();  // rest element
+    ```
+    
+- fetch(”url”).then()
+    - http의 요청과 응답 등의 요소를 javaScript에서 접근하고 조작할 수 있는 인터체이스를 제공
+    - 네트워크의 리소스를 쉽게 비동기적으로 가져올 수 있다.
+    
+    ```jsx
+    //get 방식
+    fetch('/edu/jsexam/ajaxexam/content/sample.json')
+            .then(res => res.json()) // 응답이 있으면
+            .then( data => {         //응답이 json 형태이면
+            	for (let k in data)
+            		document.body.innerHTML += `<h3>${data[k]}</h3`;
+            });
+    //post 방식
+    fetch(form.action, {
+    	    	  		method: "POST",
+    	    	  		headers: {
+    	  						'Content-Type': 'application/x-www-form-urlencoded'	  			
+    	  				},
+    	    	  		body: url_form_data
+    	    		}
+    	     	)
+    	    	.then((response) => response.json())
+    ```
+    
+
+## 2. HTTP 통신 프로토콜
+
+### 2.1 HTTP
+
+💡 웹 클라이언트와 웹 서버 사이에 이루어지는 요청과 응답에 대한 프로토콜이다.
+
+- Connection Oriented와 Stateless 방식으로 동작하는 프로토콜로 신뢰성 있는 통신을 하면서 처리 효율을 강조하여 인터넷 환경에서 가장 적합
+    - Connection Oriented → 클라이언트와 서버를 connection 하고 패킷을 전달 하는 방식, 패킷 전송을 완료 하면 연결을 끊음
+    - Stateless → **서**버는 단순히 요청이 오면 응답을 보내는 역할만 수행
+    하며, 통신에 필요한 상태 관리는 전적으로 클라이언트에게 책임이 있는 것
+- HTTP Method : GET , POST , PUT , DELETE
+
+
+💡 Servlet(Server Side Applet) 과 JSP 는 Java 의 Enterpise Edition에 속하는 웹 어플리케이션 기술로서 웹 클라이언트의 요청에 의해 웹 서버에서 수행되고 그 수행 결과가 클라이언트에 응답되는 기술로 Servlet 기술은 프로그래밍 성격이 강하며 JSP 는 프리젠테이션 성격이 강하다.
+
+- Servlet은 프로그래밍 기술이 더 많이 사용할 때
+- JSP(태그 기반)는 클라이언트 기술을 더 많이 사용할 때→ 실행시 Servlet으로 변함
+    
+   ![JSPvsServlet](https://user-images.githubusercontent.com/55836020/231733135-47ce20a8-389a-40da-b062-1f3298f96367.png)
+    
+- java EE 환경에서 Servlet과 JSP는 웹 컨테이너(엔진)에 의해 관리되고 수행되는 웹 컴포넌트로서 여러 웹 컴포넌트들이 모여 하나의 웹 어플리케이션으로 구성
+    
+	![applicatin](https://user-images.githubusercontent.com/55836020/231733018-98fda4a7-cee6-4611-b298-a4406fe9f348.png)
+    
+- 웹 어플리케이션 디렉토리 구조
+
+	![dir_structure)](https://user-images.githubusercontent.com/55836020/231733047-96dd7ef5-6201-484e-83b7-4f7dc46ead24.png)
+
+> java 는 Applet과 Application 을 구현할 수 있었다.
+> 
+> 
+> Applet 은 웹 페이지에 포함되어 작은 기능을 수행하는 프로그램 이며 HTML5에서는 더이상 지원하지 않는다.
+>
+
+## 4. Servelt
+
+💡 java Servlet 은 java를 사용하여 웹 페이지를 동적으로 생성하는 서버측 프로그램으로서 Java EE 사양의 일부분이다.
+
+- 각 요청마다 프로세스 보다 가벼운 스레드 기반으로 응답하여 가볍게 클라이언트 요청 처리할 수 있다. → 하나의 요청 하나의 스레드 생성
+
+
+![thread](https://user-images.githubusercontent.com/55836020/231734139-5ce6c5ef-f3f0-4864-81cf-facd961df17a.png)
+
+### 4.1 Servlet 구현 방법
+
+- HttpServlet 클래스를 상속 하여 구현한다
+- 요청 방식을 지원하는 Servlet에 따라 doGet() 또는 doPost()메서드를 오버라이딩(재정의)하여 구현한다.
+- @WebServlet(”/서블렛 명 “) → 구현하려는 클래스를 서블릿 프로그램으로 인식하기 위한 어노테이션을 사용하여 서블릿을 등록 및 매핑한다.
+- HttpServletRequest(요청 정보) , HttpServletResponse(응답 처리) 객체는 doGet(),doSet() 메서드 호출시 아규먼트로 전달
+
+```java
+@WebServlet("/FirstServlet") // 어노테이션 중요! 이 클래스는 서블릿 이야, 서블릿을 맵핑
+public class FirstServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("FirstServlet 실행.....");
+		response.setContentType("text/html; charset=utf-8"); // 한글을 인식하기 위해 charset 설정(utp-8)
+		PrintWriter out = response.getWriter();// getWirter() -> client 문서에 쓴다.
+		out.print("<h1>안녕? Servlet!</h1>");
+		out.close();
+	}
+}
+```
+
+### 4.2 Servlet 처리 흐름
+
+![flow](https://user-images.githubusercontent.com/55836020/231735226-c181005a-a8f5-49da-ae50-0b5df5f8ab68.png)
+
+- init() → Servlet이 생성후 처음 호출 되는 메서드
+- service() → 요청 할 때 마다 호출되는 메서드
+- destroy() → 메모리에 해제 될때 처리 ( 코드 수정 될 때)
+
+```java
+@WebServlet("/flow")
+public class FlowServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+    public FlowServlet() {
+        super();
+        System.out.println("FlowServlet 객체 생성....");
+    }
+	public void init(ServletConfig config) throws ServletException {
+		System.out.println("init() 메서드 호출....");
+	}
+	public void destroy() { // application 안에 있는 servlet이 수정됐을 때 실행됨
+		System.out.println("destroy() 메서드 호출....");
+	}
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("service() 메서드 호출...."); //doGET 실행
+	}
+
+}
+```
+
+## 5. <Form> 태그
+
+💡 HTML 문서에서 사용자의 입력을 서버로 전달하는 기능은 form 태그를 이용해 구현된다.
+
+- **action** : 사용자의 입력 데이터를 처리할 CGI 프로그램의 URL 주소
+- **method** : GET, POST 두 가지 방법
+- **enctype** : 서버로 보내지는 `데이터의 형식`을 지정한다.
+    1. application/x-www-form-urlencoded : 
+        - 디폴트 값, 서버로 전송되기 전 url-encode 된다.
+    2. multipart/form-data
+        - 파일을 서버로 전송할 경우 사용
+    3. text/plain
+        - 인코딩을 하지 않은 문자 그대로 전송
+
+
+## 6. Query 문자열
+
+💡 웹 클라이언트에서 웹 서버에 요청을 보낼 때 추가로 전달하는 name과 value로 구성되는 문자열로서 요청 파라미터라고 한다.
+
+- [GET 방식]
+    - 입력 내용을 요청 URL 뒤에 붙여서 보낸다.
+    - Query 문자열의 길이가 제한이 있고 내용이 브라우저 주소 필드에 보여진다.
+- [POST 방식]
+    - 요청 바디에 담아 보낸다.
+    - Query 문자열의 길이 제한 없고 내용이 브라우저 주소 필드에 보여지지 않는다.
+    - **`setCharacterEnconding(”utf-8”)`** —> 없으면 한글 깨짐 중요❗
+
+### 6.1 Query 문자열 추출
+
+- name 으로 하나 value 값이 전달될 때
+    - String value =  request.getParameter(”name”);
+- name으로 여러 개의 value 값들이 전달될 때
+    - String values[] = request.getParameterValues(”name”);
+
+> response.setContentType("text/html;charset=utf-8");
+> 
+> 
+> setCharacterEnconding(”utf-8”);  —> post일때 만!!
+> 
+> 위 두개 중요!!
+>
+
+## 7. 요청 재지정
+
+💡 클라이언트에서 요청한 페이지 대신 다른 페이지를 클라이언트가 보게 되는 기능
+
+### redirect
+
+![redirect)](https://user-images.githubusercontent.com/55836020/231735783-132aeb0a-f5e3-41b9-9deb-bd0f85a63020.png)	
+
+- 다른 자원을 다시 요청하여 응답하게 함
+- Web 상의 모든 페이지로 요청재지정 가능
+- 브라우저의 주소필드의 URL 이 바뀐다.
+- 재지정 대상에 대한 요청 자체를 브라우저가 한다.
+- 두 자원이 HttpServletRequest 객체를 공유하지 않음
+- HttpServletResponse의 sendRedirect() 메서드 사용
+
+### Forward
+
+![forward](https://user-images.githubusercontent.com/55836020/231735787-78b9e597-b41f-45f9-8068-3d6fc6d44a07.png)
+
+- 동일한 요청상에서 다른 자원에 요청을 넘겨서 대신 응답하게 함
+- 동일한 서버의 동일 웹 어플리케이션에 존재 하는 대상만 가능
+- 브라우저의 주소필드 URL이 바뀌지 않음
+- 두 자원이 HttpServeletRequest 객체 공유
+- 두 자원이 RequestDispatcher의 forward(”url”)
+    - 컨텍스트는 빼고 나머지 url을 준다. → 다른 어플리케이션 접근을 막기 위해
+    - RequestDispatcher rd = request.getRequestDispatcher("/clientexam/output.html");
+
+## 기타
+
+- java 멤버 변수는 객체 호출 시 메모리 할당 , 공유 됨 —→ 새로고침 해도 유지 됨
+- response.setContentType("text/html;charset=utf-8"); 은 doGet, doPost 메서드 내에 가장 먼저 호출되어야 한다.
+
+
+
+
+## Exercise01 / Servlet
+
+<details>
+<summary> 📜Servlet 실습 펼쳐보기</summary>
+<div markdown="1">
+
+## Exercise 01 / Servlet
+
+1️⃣ **[실습 1]**
+
+- 매핑명 : /myfirst
+- GET 방식지원 서블릿
+- 기능 : name이라는 이름으로 전달되는 Query 문자열을 추출하고
+
+`<h2>xxx님 반가워요.. 오늘은 x 요일입니다!!</h2>` 를 브라우저로 응답
+
+```java
+@WebServlet("/myfirst")
+public class MyFirstServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html;charset=utf-8");
+		PrintWriter out = response.getWriter();
+		String userName = request.getParameter("name");
+		if (userName == null) {
+			userName="GUEST";
+		}
+		
+		String date = (LocalDate.now()).getDayOfWeek().getDisplayName(TextStyle.SHORT, Locale.KOREAN);
+		out.print("<h2>"+userName+"님 반갑습니다. 오늘은 "+date+"요일입니다😄</h2>");
+		out.close();
+		}
+}
+```
+
+2️⃣ **[실습2]**
+
+- 클래스명 : VisitorServlet
+- 매핑명 : /visitor
+- post 방식
+- `<h2>` xxx님이 xxx년 xx월 xx일에 남긴 글입니다. `</h2>`
+- content의 내용과 입력화면으로 돌아가는 기능 추가
+1. visitorform
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>visitorForm</title>
+</head>
+<body>
+<h1>글을 남겨주세요</h1>
+<hr>
+<form action="/edu/visitor" method="post">
+	<label>이름 : <input type="text" name="name" placeholder="이름을 입력하세요"  required><br></label>
+	<label>남기고자 하는 의견 : <br>
+	<textarea name="opinion" rows="10" cols="50"></textarea><br></label>
+
+	<input type="submit" value="등록">
+	<input type="reset" value="재작성">
+</form>
+
+</body>
+</html>
+```
+
+1. VisitorSrvlet
+
+```html
+@WebServlet("/visitor")
+public class VisitorServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html;charset=utf-8");
+		request.setCharacterEncoding("utf-8");
+		
+		PrintWriter out = response.getWriter();
+		String userName = request.getParameter("name");
+		String userText = request.getParameter("opinion");
+
+		LocalDate currentDate = LocalDate.now();
+		out.print("<h2>"+userName+" 님이 "+currentDate.getYear()+"년 "+currentDate.getMonthValue()+"월 "+currentDate.getDayOfMonth()+"일에 남긴 글입니다.</h2>");
+		out.print("<hr>");
+		out.print(userText);
+		out.print("</br>");
+		out.print("</br>");
+		
+		out.print("<a href='"+request.getHeader("referer")+"'>입력화면으로 가기</a>");
+		out.close();
+	
+	}
+
+}
+```
+
+
+</div>
+</details>
+
+
+## 🤷‍♀️ today’s feeling
+
+- Java 람다식과 js Arrow function 비교하며, java 람다식 다시 한번 보기
+    - js의 Arrow가 더 익숙하다. java 다시 확인해 보기
+- Servlet을 추가하면 꼭 톰캣을 재기동 해야한다 → 재기동 안하면 인식 안됨..!
+- 빈 문자열 체크나 null 체크 할 때 조건식에 null 체크를 가장 먼저 해야한다 → null일 때 null을 나중에 체크하면 NullpointException 발생..!!
+- 2023-04-13 복습 → 실습 중 부족한 부분 개념을 다시 잡을 수 있었다.
