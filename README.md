@@ -11,8 +11,8 @@
   - [x] JAVA
   - [x] DB 와 SQL
   - [x] JDBC
-  - [ ] Web Client - HTML5,CSS3, javaScript(ES6)
-  - [ ] MVC 기반의 Servelet&JSP 
+  - [x] Web Client - HTML5,CSS3, javaScript(ES6)
+  - [x] MVC 기반의 Servelet&JSP 
   - [ ] **게시판 구현 학습** Spring FW(DI, MVC, Restful API, JdbcTemplate)
   - [ ] 📍1차 미니 프로젝트 (4.26 ~ 5.2)  
   - [ ] JPA
@@ -79,8 +79,8 @@
 |--|--|--|--|--|--|01|
 |02|03</br> [![logo](https://img.shields.io/badge/day25-FFACAC?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/TIL/Week06/2023-04-03%20JavaScript.md)|04</br> [![logo](https://img.shields.io/badge/day26-FFBFA9?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/TIL/Week06/2023-04-04%20function%2CArray.md)|05</br> [![logo](https://img.shields.io/badge/day27-FFEBB4?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/TIL/Week06/2023-04-05%20Object.md)|06</br> [![logo](https://img.shields.io/badge/day28-E9EDC9?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/TIL/Week06/2023-04-06%20EventModel.md)|07</br> [![logo](https://img.shields.io/badge/day29-9ED2C6?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/TIL/Week06/2023-04-07%20JS%20API.md)|08|
 |09|10</br> [![logo](https://img.shields.io/badge/day30-FFACAC?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/TIL/Week07/2023-04-10%20Ajax.md)|11</br> [![logo](https://img.shields.io/badge/day31-FFBFA9?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/TIL/Week07/2023-04-11%20Servlet.md)|12</br> [![logo](https://img.shields.io/badge/day32-FFEBB4?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/TIL/Week07/2023-04-13%20Session.md)|13</br> [![logo](https://img.shields.io/badge/day33-E9EDC9?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/TIL/Week07/2023-04-13%20JSP.md)|14</br> [![logo](https://img.shields.io/badge/day34-9ED2C6?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/TIL/Week07/2023-04-14%20JSP2,MVC.md)|15|
-|16|17</br> [![logo](https://img.shields.io/badge/day35-FFACAC?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/TIL/Week08/2023-04-17%20JUnit5%2C%20Spring.md)|18</br>![logo](https://img.shields.io/badge/no_class-F9F9F9?style=?style=flat&logoColor=white)|19</br>![logo](https://img.shields.io/badge/no_class-F9F9F9?style=?style=flat&logoColor=white)|20|21|22|
-|23|24|25|26|27|28|29|
+|16|17</br> [![logo](https://img.shields.io/badge/day35-FFACAC?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/TIL/Week08/2023-04-17%20JUnit5%2C%20Spring.md)|18![logo](https://img.shields.io/badge/no_class-F9F9F9?style=?style=flat&logoColor=white)|19![logo](https://img.shields.io/badge/no_class-F9F9F9?style=?style=flat&logoColor=white)|20</br> [![logo](https://img.shields.io/badge/day36-E9EDC9?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/TIL/Week08/2023-04-20%20Ioc%20xml.md)|21</br> [![logo](https://img.shields.io/badge/day37-9ED2C6?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/TIL/Week08/2023-04-21%20IoC%20Annotaion.md)|22|
+|23|24</br> [![logo](https://img.shields.io/badge/day38-FFACAC?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/TIL/Week09/2023-04-24%20Spring%20mvc.md)|25</br> [![logo](https://img.shields.io/badge/day39-FFBFA9?style=?style=flat&logoColor=white)](https://github.com/juhee99/Msa-Dkteckin-fullstack/blob/main/TIL/Week09/2023-04-25%20thymeleaf.md)|26|27|28|29|
 |30|--|--|--|--|--|--|
 
 </div>
