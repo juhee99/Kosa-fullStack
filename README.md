@@ -1,4 +1,4 @@
-![slice](https://capsule-render.vercel.app/api?type=slice&color=F9E000&height=200&text=Kosa&fontAlign=70&rotate=13&fontAlignY=25&desc=MSA Full Stack Education&descAlign=70.&descAlignY=44)
+![slice](https://capsule-render.vercel.app/api?type=slice&color=F9E000&height=200&text=KOSA&fontAlign=70&rotate=13&fontAlignY=25&desc=MSA Full Stack Education&descAlign=70.&descAlignY=44)
 
 # <p style= "font-family:NanumSqyare;" align= "center"> 👀 Curriculum </p>
 
