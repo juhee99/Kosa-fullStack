@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            border : 1px solid #aaaaaa;
+        }
+        tr, td {
+            border : 1px solid #aaaaaa;
+        }
+    </style>
+</head>
+<body>
+<h2>책 정보 출력</h2>
+<hr>
+<a href = "/bookinfo/b1"><button>모든 도서</button></a>
+<a href = "/bookinfo/b2"><button>가격이 높은 순으로</button></a>
+<a href = "/bookinfo/b3"><button>가격이 20000원 보다 높은 도서</button></a>
+<a href = "/bookinfo/b4"><button>웹프로그래밍 도서</button></a>
+<a href = "/bookinfo/b5"><button>데이터베이스와 인프라 도서</button></a>
+<a href = "/bookinfo/b6"><button>도서명에 자바를 포함하는 도서</button></a>
+<a href = "/bookinfo/b7"><button>도서명에 스프링을 포함하는 도서</button></a>
+<a href = "/bookinfo/b8"><button>분류별 도서 가격의 벌금</button></a>
+<a href = "/bookCreate" ><button>도서 추가</button></a>
+<hr>
+<div>
+    <table th:if="${list}">
+        <tr>
+           <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>kind</th>
+        </tr>
+        <tr th:each="data : ${list}">
+            <td>[[${data.id}]]</td>
+            <td>[[${data.title}]]</td>
+            <td>[[${data.price}]]</td>
+            <td>[[${data.kind}]]</td>
+        </tr>
+    </table>
+
+    <th:block th:if="${avglist}">
+        <ol th:each="data : ${avglist}">
+            <li th:text="| ${data.kind}의 도서들의 가격 평균은 ${data.priceAvg} 입니다.|"></li>
+        </ol>
+    </th:block>
+
+    <h3 th:if="${msg}" th:text="${ msg }"></h3>
+
+</div>
+
+</body>
+</html>

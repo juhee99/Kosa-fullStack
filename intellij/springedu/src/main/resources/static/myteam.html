@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team</title>
+</head>
+<body>
+
+<h1>우리팀 소개</h1>
+<hr>
+<button onclick="go('name')">우리 팀명</button>
+<button onclick="go('member')">우리 팀원</button>
+<div id="teamContainer">
+</div>
+
+<script>
+  function go(option){
+    let request = new XMLHttpRequest();
+    request.onload = function () {
+      if (request.status == 200) {
+        const result = document.getElementById("teamContainer");
+        let json = JSON.parse(request.responseText);
+
+        if(option == 'name'){
+          result.innerHTML="";
+          result.innerHTML+=`<h2>우리팀의 팀명은 ${json.teamName} 입니다.</h2>`
+        }else{
+          result.innerHTML="";
+          result.innerHTML+=`<h2>${json.teamName}팀의 팀원들을 소개합니다.</h2>`
+          json.teamMember.map((data) => {
+            result.innerHTML+=`<p>${data.name}: 별명은 ${data.nicName} 좋아하는 음식은 ${data.food}입니다.</p>`
+          });
+        }
+      }
+    };
+
+    request.open('GET','/team',true);
+    request.send();
+  }
+</script>
+
+</body>
+</html>
