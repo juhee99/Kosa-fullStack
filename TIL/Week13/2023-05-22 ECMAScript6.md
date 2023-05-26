@@ -1,4 +1,4 @@
-<img src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566778017/noticon/ytjm1rralodyhvuggrpu.png" height="15%" width="15%"> <br/>
+<img src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1568683636/noticon/hkuhbyocl2mx2keas7ng.png" height="15%" width="15%"> <br/>
 
 # 2023-05-22 / ECMAScript6
 
