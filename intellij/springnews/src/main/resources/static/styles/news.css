@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+h1 {
+    font-family: sans-serif;
+}
+
+.blueone {
+    border-collapse: collapse;
+}
+.blueone th {
+    padding: 10px;
+    color: #168;
+    border-bottom: 3px solid #168;
+    text-align: left;
+}
+.blueone td {
+    color: #669;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.blueone tr:hover td {
+    color: #004;
+}
+
+#writeBoard {
+    display: none;
+    width: 40%;
+    height: 300px;
+}
+
+#writeBoard textarea{
+    height: 100px;
+}
+
+.writeForm {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+}
+
+.writeForm input {
+    margin-top: 5px;
+
+}
+
+.writeForm textarea {
+    margin : 10px 0 15px 0;
+    height: 100px;
+}
+
+
+.bntContainer {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.bntContainer button {
+    margin-right: 10px;
+    background-color: #FEA1A1;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.bntContainer button:hover {
+    background-color: #F99B7D;
+}
+
+.bntContainer button[type="reset"] {
+    background-color: #ECCDB4;
+}
+
+.bntContainer button[type="reset"]:hover {
+    background-color: #E76161;
+}

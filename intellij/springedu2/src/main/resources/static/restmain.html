@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rest</title>
+</head>
+<body>
+<h1>5 조의 REST API 실습</h1>
+<hr>
+<button onclick="showActorList(); return false">둘리와 친구들 보기</button>
+<div id="actorBox">
+</div>
+
+<script>
+    const actorBox = document.getElementById("actorBox");
+
+
+  function showActor(param){
+      actorBox.innerHTML="";
+      fetch(param)
+          .then(res => res.json())
+          .then(data =>{
+              actorBox.innerHTML += `<h2>${data.name}</h2>`
+              actorBox.innerHTML += `<p>${data.addr}</p>`
+              actorBox.innerHTML += `<img src="/static/images/${data.image}"/>`
+          })
+
+  }
+
+    const showActorList  = () => {
+      actorBox.innerHTML="";
+        fetch('http://localhost:8088/all')
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                const list=data._embedded.comicActorModelList;
+                list.map(list => {
+                    actorBox.innerHTML += `<button onclick="showActor('${list._links.self.href}')"> ${list.name}</button>`
+                })
+                actorBox.innerHTML += `<hr>`;
+            })
+    }
+</script>
+</body>
+</html>
